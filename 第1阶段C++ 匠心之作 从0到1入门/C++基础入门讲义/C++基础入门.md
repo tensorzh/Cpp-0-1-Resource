@@ -3535,7 +3535,7 @@ int main() {
 
 	Teacher tArray[3]; //老师数组
 
-	int len = sizeof(tArray) / sizeof(Teacher);
+	int len = sizeof(tArray) / sizeof(tArray[0]);
 
 	allocateSpace(tArray, len); //创建数据
 
