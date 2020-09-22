@@ -3517,7 +3517,7 @@ void allocateSpace(Teacher tArray[] , int len)
 	}
 }
 
-void printTeachers(Teacher tArray[], int len)
+void printTeachers(Teacher tArray[], int len) //形参是数组
 {
 	for (int i = 0; i < len; i++)
 	{
@@ -3538,7 +3538,7 @@ int main() {
 	int len = sizeof(tArray) / sizeof(tArray[0]);
 
 	allocateSpace(tArray, len); //创建数据
-
+         //实参是指针
 	printTeachers(tArray, len); //打印数据
 	
 	system("pause");
